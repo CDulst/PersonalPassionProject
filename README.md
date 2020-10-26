@@ -32,7 +32,7 @@ Face-To-Face instead of through a traditional web/mobile platform is still a dis
 
 
 ## The Concept
-The problem of VR being not owned by enough users therefore not being accessible enough to make social media work is the painpoint my experiment is based upon.
+The problem of VR being not owned by enough users therefore not being accessible enough to make VR only social media work is the painpoint my experiment is based upon.
 
 What if we combine both virtual reality and traditional web platforms so that both people in VR and people not in VR can interact with one another.
 Make it so they don't get separated and that VR can add to the already existing social media world.
