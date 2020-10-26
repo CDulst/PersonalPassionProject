@@ -1,5 +1,5 @@
 # The VR Social Experiment
-A Social Experiment That allows interaction between an individual in a VR world and a person on a traditional web platform.
+A social experiment that allows interaction between an individual in a VR world and a person on a traditional web platform.
 
 ## Virtual Reality and social media.
 Quote
