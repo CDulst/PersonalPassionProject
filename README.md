@@ -9,9 +9,11 @@ https://cdulst-passion-project-blog.netlify.app/
 <img width="452" alt="Quote 1" src="https://user-images.githubusercontent.com/56590727/97216256-d9806a80-17c5-11eb-9024-9fed7aee021d.png">
 
 This is a Quote by Mark Zuckerberg in 2014 when they bought oculus.
-Facebook is a big believer in virtual reality. they believe VR is the next big step in evolving social media to its next level.
+Facebook is a big believer in virtual reality. They believe VR is the next big step in evolving social media.
 
-Quote
+
+<img width="452" alt="Quote 2" src="https://user-images.githubusercontent.com/56590727/97216910-c9b55600-17c6-11eb-8cdf-49b650c35b81.png">
+
 
 This why Facebook spends its resources on releasing accessible VR headsets over powerful ones.
 An example is their currently released Oculus Quest 2.
@@ -126,7 +128,7 @@ I still think there is so much room for exploration and experimentation within V
 Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and a webapplications in the future.
 
 
-//Quote
+<img width="569" alt="Quote 3" src="https://user-images.githubusercontent.com/56590727/97216908-c752fc00-17c6-11eb-88a0-d63e7c1c5938.png">
 
 
 
