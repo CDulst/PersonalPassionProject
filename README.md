@@ -32,7 +32,7 @@ Face-To-Face instead of through a traditional web/mobile platform is still a dis
 
 
 ## The Concept
-The problem of VR being not owned by enough users therefore not being accessible enough is where my passion project's base lies.
+The problem of VR being not owned by enough users therefore not being accessible enough to make social media work is the painpoint my experiment is based upon.
 
 What if we combine both virtual reality and traditional web platforms so that both people in VR and people not in VR can interact with one another.
 Make it so they don't get separated and that VR can add to the already existing social media world.
@@ -122,7 +122,7 @@ other way around. combining existing social media with a virtual reality one.
 ## The client
 It's a personal experiment so the client is myself.
 
-Yhere is so much room for exploration and experimentation within VR since it's such a young technology with a lot of potential.
+There is so much room for exploration and experimentation within VR since it's such a young technology with a lot of potential.
 
 Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and webapplications in the future.
 
