@@ -101,7 +101,7 @@ other way around. combining existing social media with a virtual reality one.
 * Spawn objects in VR room.
 * Upload mp3 and stream the audio.
 * Change lighting and ability turn on and off within VR room.
-* Track the persons location within the VR world.
+* Track the persons location and object locations within the VR world.
 * Display the screenshots that got send from the VR world.
 
 
