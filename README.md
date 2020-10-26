@@ -32,14 +32,14 @@ Face-To-Face instead of through a traditional web/mobile platform is still a dis
 
 
 ## The Concept
-The problem of VR being not owned by enough users therefore not being accessible enough is where my passion project is based upon.
+The problem of VR being not owned by enough users therefore not being accessible enough is where my passion project's base lies.
 
 What if we combine both virtual reality and traditional web platforms so that both people in VR and people not in VR can interact with one another.
-Make it they don't get separated and that VR can add to the already existing social media world.
+Make it so they don't get separated and that VR can add to the already existing social media world.
 
 In my VR Social Experiment 2 different users will interact with one another.
 
-1 is in the VR world, Hewithin the experience is the "test subject" and he gets placed in an initial white and empty experimentroom with a screen on the end.
+1 is in the VR world, He within the experience is the "test subject" and he gets placed in an initial white and empty experiment room with a screen on the end.
 
 1 is on a webapp. He is the overseer of the experiment with a fitting platform as interaction tool.
 
@@ -76,8 +76,7 @@ The overseer will be able to track the location of the person within the vr room
 It will be represented by a red dot on a html canvas.
 
 ---------------------------------------------------------------------------------------
-
-For this experimentation project this is a 1 on 1 experience but this could be translated to many to many.
+This is a 1 on 1 experience but this could easily be translated to many to many.
 
 A lot of people in the outside world would be able to share things with people in the virtual one and the
 other way around. combining existing social media with a virtual reality one.
@@ -123,9 +122,9 @@ other way around. combining existing social media with a virtual reality one.
 ## The client
 It's a personal experiment so the client is myself.
 
-I still think there is so much room for exploration and experimentation within VR since it's such a young technologie with a lot of potential.
+Yhere is so much room for exploration and experimentation within VR since it's such a young technology with a lot of potential.
 
-Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and a webapplications in the future.
+Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and webapplications in the future.
 
 
 <img width="569" alt="Quote 3" src="https://user-images.githubusercontent.com/56590727/97216908-c752fc00-17c6-11eb-88a0-d63e7c1c5938.png">
