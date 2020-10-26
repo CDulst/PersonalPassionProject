@@ -6,7 +6,7 @@ https://cdulst-passion-project-blog.netlify.app/
 
 ## Virtual Reality and social media.
 
-Quote
+<img width="452" alt="Quote 1" src="https://user-images.githubusercontent.com/56590727/97216256-d9806a80-17c5-11eb-9024-9fed7aee021d.png">
 
 This is a Quote by Mark Zuckerberg in 2014 when they bought oculus.
 Facebook is a big believer in virtual reality. they believe VR is the next big step in evolving social media to its next level.
