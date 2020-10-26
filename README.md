@@ -1,41 +1,43 @@
 # The VR Social Experiment
 A social experiment that allows interaction between an individual in a VR world and a person on a traditional web platform.
 
+Progress blog:
+https://cdulst-passion-project-blog.netlify.app/
+
 ## Virtual Reality and social media.
+
 Quote
 
 This is a Quote by Mark Zuckerberg in 2014 when they bought oculus.
-
-Facebook is a big believer in virtual reality and their main believe is
-is that VR is the next big step in evolving social media to it's next level.
+Facebook is a big believer in virtual reality. they believe VR is the next big step in evolving social media to its next level.
 
 Quote
 
-This is also the big reason why facebook spends it's recources on releasing accessible instead of powerfull vr headsets
-like the currently released oculus quest 2.
+This why Facebook spends its resources on releasing accessible VR headsets over powerful ones.
+An example is their currently released Oculus Quest 2.
 
-"Facebook Horizon", The next big step in evolving social media is also currently in invite-only beta.
+"Facebook Horizon", The next big step in evolving social media, is also currently in invite-only beta.
 
 
 ## The Accessibility problem
 Facebook recently admitted that VR hasn't reached the mainstream as soon as they hoped it would.
-The reason why social media is so successful is primarely because it is so accessible. Everyone can access
-it either through mobile devices or on pc.
+The reason why social media is so successful is primarily because it is so accessible. Everyone can access
+it either through mobile devices or on PC.
 
-Currently their are about 171 million VR users worldwide while Facebook hopes that number will reach 1 billion in the near
-future. VR is still a niche medium, the dream of having people interact with eachother through a virtual environment
+Currently, 171 million people use VR worldwide and Facebook hopes that number will reach 1 billion in the near
+future. VR is still a niche medium thus the dream of having people interact with each other through a virtual environment
 Face-To-Face instead of through a traditional web/mobile platform is still a distant one.
 
 
 ## The Concept
-The problem of VR being not owned by enough users theirfore not being accessible enough is where my passion project is based upon.
+The problem of VR being not owned by enough users therefore not being accessible enough is where my passion project is based upon.
 
-What if we combine both virtual reality and traditional web platforms. So that both people in VR and people not in VR can interact with oneanother.
-that they don't get seperated and that VR can add too the already existing social media world.
+What if we combine both virtual reality and traditional web platforms so that both people in VR and people not in VR can interact with one another.
+Make it they don't get separated and that VR can add to the already existing social media world.
 
-In my VR Social Experiment 2 different users will stand in contact with one another.
+In my VR Social Experiment 2 different users will interact with one another.
 
-1 is in the VR world, He within the experience is the "test subject" and he gets placed in an initial white and empty experiment room with a screen on the end.
+1 is in the VR world, Hewithin the experience is the "test subject" and he gets placed in an initial white and empty experimentroom with a screen on the end.
 
 1 is on a webapp. He is the overseer of the experiment with a fitting platform as interaction tool.
 
@@ -46,11 +48,11 @@ In my VR Social Experiment 2 different users will stand in contact with one anot
 
 #### WebApp -> VR
 
-The overseer on the webplatform can communicate and share things with the user in the VR world. Does this work?
-* Text messages that appear on screen in the VR for user to read.
+The overseer on the webplatform can communicate and share things with the user in the VR world.
+* Text messages that appear on screen in the VR room for the user to read.
 * Questions to answer with yes or no
-* Stream Music that gets played in the VR room.
-* Spawning Items
+* Stream music that gets played in the VR room.
+* Spawning items
 * Change lighting in room
 * Share Picture/Meme that gets spawned in VR room.
 
@@ -73,33 +75,33 @@ It will be represented by a red dot on a html canvas.
 
 ---------------------------------------------------------------------------------------
 
-For this experimentation project this is a 1 on 1 experience but this would be able to be translated to many to many.
+For this experimentation project this is a 1 on 1 experience but this could be translated to many to many.
 
-A lot of people in the outside world that would be able to share things (like social media) with people in the virtual one and the
-other way around. combining existing social media with virtual reality one.
+A lot of people in the outside world would be able to share things with people in the virtual one and the
+other way around. combining existing social media with a virtual reality one.
 
 
 ## Deliverables
 
 ### As I user in the virtual reality room I can....
 * Walk around in the room without being able to escape
-* Carry around object, Decorate room with objects
-* Throw objects
-* Perform Gestures.  (thumbs up, Headshake, middlefinger, fist up)
-* Read messanges on big screen.
-* See send through Messages and memes, decorate the walls
-* Take screenshots of your room and send them through to the web applicatioon
-* Listen to music send by overseer
+* Carry around spawned objects and decorate room with them.
+* Throw objects.
+* Perform Gestures.  (thumbs up, Headshake, middlefinger, fist up).
+* Read messages on the big screen.
+* See messages and memes and decorate wall with them.
+* Take screenshots of your room and send them to the web application user.
+* Listen to music that was send by overseer.
 
 
-### As I user on the webplatform......
-* Send messages to VR room
-* Upload pictures/memes en send to vr world
-* Spawn object in vr world
-* Upload mp3 en stream audio
-* Change lighting, turn on off
-* Track where the person is situated within the vr world
-* Display the screenshot's that got send from the vr world.
+### As I user on the webplatform I can......
+* Send messages to VR room.
+* Upload pictures/memes and send to VR room.
+* Spawn objects in VR room.
+* Upload mp3 and stream the audio.
+* Change lighting and ability turn on and off within VR room.
+* Track the persons location within the VR world.
+* Display the screenshots that got send from the VR world.
 
 
 ## Technology
@@ -117,11 +119,11 @@ other way around. combining existing social media with virtual reality one.
 * Socket.IO
 
 ## The client
-The client is myself since it's a Personal Experiment.
+It's a personal experiment so the client is myself.
 
-I still think there is so much room for exploration en experimentation within VR since it's a young technologie with a lot of potential.
+I still think there is so much room for exploration and experimentation within VR since it's such a young technologie with a lot of potential.
 
-Maybe Game devs or facebook itself will be able to come up with cool concepts that combine VR and a webapplication in the future.
+Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and a webapplications in the future.
 
 
 //Quote
