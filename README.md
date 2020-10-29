@@ -111,9 +111,7 @@ other way around. combining existing social media with a virtual reality one.
 * Oculus Framework
 
 ### Web App
-* HTML5/CSS
-* HTML Canvas
-* PlainJS
+* HTMl/CSS/JS
 
 ### Server / Integration
 * NodeJS
