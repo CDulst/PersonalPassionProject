@@ -35,74 +35,69 @@ Face-To-Face instead of through a traditional web/mobile platform is still a dis
 The problem of VR being not owned by enough users therefore not being accessible enough to make VR only social media work is the painpoint my experiment is based upon.
 
 What if we combine both virtual reality and traditional web platforms so that both people in VR and people not in VR can interact with one another.
-Make it so they don't get separated and that VR can add to the already existing social media world.
+in a unique interactive way. For the interactivity to truly shine. there needs to be some story telling involved aswell.
 
-In my VR Social Experiment 2 different users will interact with one another.
-
-1 is in the VR world, He within the experience is the "test subject" and he gets placed in an initial white and empty experiment room with a screen on the end.
-
-1 is on a webapp. He is the overseer of the experiment with a fitting platform as interaction tool.
-
-
-## Research Questions / How does it work?
-
-### Communication and interaction between WebApp and VR
-
-#### WebApp -> VR
-
-The overseer on the webplatform can communicate and share things with the user in the VR world.
-* Text messages that appear on screen in the VR room for the user to read.
-* Questions to answer with yes or no
-* Stream music that gets played in the VR room.
-* Spawning items
-* Change lighting in room
-* Share Picture/Meme that gets spawned in VR room.
-
-#### VR -> WebApp
-
-The person in the vr room can respond to the person on the app and also share things.
-* Respond through Gestures (Thumbs up/down, headshake yes/no, fist up, middelfinger..). They translate to classic social media respond icons on the webapp.
-* Decorate the room with items send by overseer.
-* Take screenshots of the room and send them to the webapp.
+### The Story
+The person in the VR Room is our test subject. He is placed inside of an experiment room where he will be tested by the experiment overseer. The person on the webapp.
+Both the VR user and Web user will stand in direct contact with oneanother.
+The overseer will test the test subject's abilities such as hearing, following commands, memory, reaction time, speed and so on in the form of subsequent minigames.
+It will be fun for the overseer aswell. since he will be actively involved in the experiments himself. either giving commands or competing directly with the test subject.
 
 
-### Tracking person in VR world.
+## The Experience.
 
-Face-to-Face is the main selling point about virtual reality social media.
+### Home (Experiment room)
 
-This is not possible here so let's do it in a different way.
-
-The overseer will be able to track the location of the person within the vr room on the web app
-It will be represented by a red dot on a html canvas.
-
----------------------------------------------------------------------------------------
-This is a 1 on 1 experience but this could easily be translated to many to many.
-
-A lot of people in the outside world would be able to share things with people in the virtual one and the
-other way around. combining existing social media with a virtual reality one.
+#### Test Subject (VR)
+Initially when starting the interactive experiment and between minigames he will be placed inside of a initial white empty room with a big screen on the end. The overseer wil be able to communicate to you through the big screen and a image and sound terminal.
+with him using the screen. User can respond to text messages with gestures (thumbs up/down, wave, ok sign...), Pick up and place objects that get spawned, listen to music that overseer uploaded using terminal and spawn images through terminal and place them on the wall.
+of the room. The VR user can take a screenshot and send it to the overseer anytime during the experiment.
 
 
-## Deliverables
+#### Overseer (Web)
+On the homescreen the overseer sees a message box and a 2d canvas version of the room where the test subject is represented by a red dot.
+He can write messages and see responses of the test subject as 2d icons.
+He can upload photo's and music directly to the VR room.
+He can spawn an item from the list inside the room.
+He can change the color of lighting inside VR room.
+See screenshots taken inside vr room.
 
-### As I user in the virtual reality room I can....
-* Walk around in the room without being able to escape
-* Carry around spawned objects and decorate room with them.
-* Throw objects.
-* Perform Gestures.  (thumbs up, Headshake, middlefinger, fist up).
-* Read messages on the big screen.
-* See messages and memes and decorate wall with them.
-* Take screenshots of your room and send them to the web application user.
-* Listen to music that was send by overseer.
+### minigame 1, Sound Commando 
+This experiment wil test
+- Following commands
+- Hear ability
+- Reaction time
+- Communication 
 
+#### Test Subject (VR)
+you have a gun
+object will move towards you in a fast pace from any direction
+the overseer will send you a 3D sound signal from the direction an object is flying toward you
+you need to turn around and shoot it before it reaches you
+long can you survive. which stage do you reach.
 
-### As I user on the webplatform I can......
-* Send messages to VR room.
-* Upload pictures/memes and send to VR room.
-* Spawn objects in VR room.
-* Upload mp3 and stream the audio.
-* Change lighting and ability turn on and off within VR room.
-* Track the persons location and object locations within the VR world.
-* Display the screenshots that got send from the VR world.
+#### Overseer (Web)
+You will see the direction the item is flying from.
+You need to give a signal to the vr subject the direction it's flying from
+You can be the cause of the experiment failing if your reaction time and communication abilties are not in order.
+
+### minigame 2, Web vs VR, A test of speed
+This experiment will test
+- Speed
+- Reaction time
+- Web vs VR
+
+#### Test Subject (VR)
+ you have a gun
+ 100's of ballons will be placed all around you.
+ You need to shoot as many of them as you can
+ How many did you pop? Did you pop more balloons then the overseer?
+
+#### Overseer (Web)
+You have your mouse
+100's of balloons will be placed on your screen canvas
+you need to click 5 times on a balloon to pop them. pop as many as you can.
+How many did you pop? Did you pop more balloons then the test subject.
 
 
 ## Technology
@@ -122,7 +117,7 @@ It's a personal experiment so the client is myself.
 
 There is so much room for exploration and experimentation within VR since it's such a young technology with a lot of potential.
 
-Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combine VR and webapplications in the future.
+Maybe Gamedevs or Facebook itself will be able to come up with cool concepts that combines VR and webapplications in the future.
 
 
 <img width="569" alt="Quote 3" src="https://user-images.githubusercontent.com/56590727/97216908-c752fc00-17c6-11eb-88a0-d63e7c1c5938.png">
