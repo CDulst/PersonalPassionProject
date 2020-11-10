@@ -101,7 +101,7 @@ This experiment will test
 
 #### Test Subject (VR)
  you have a gun.
- 100's of ballons will be placed all around you.
+ 100's of balloons will be placed all around you.
  You need to shoot as many of them as you can. beware since the test subject is popping balloons aswell.
  How many did you pop? Did you pop more balloons than the overseer?
 
