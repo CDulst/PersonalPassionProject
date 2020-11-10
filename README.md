@@ -55,7 +55,7 @@ It will be fun for the overseer aswell.since he will be actively involved in the
 #### Test Subject (VR)
 Initially when starting the interactive experiment and between minigames he will be placed inside of a initial white empty room with a big screen on the end. The overseer wil be able to communicate to you through the big screen and a image and sound terminal.
 
-with him using the screen. User can respond to text messages with gestures (thumbs up/down, wave, ok sign...), Pick up and place objects that get spawned, listen to music that overseer uploaded using terminal and spawn images through terminal and place them on the wall.
+User can respond to text messages with gestures (thumbs up/down, wave, ok sign...), Pick up and place objects that get spawned, listen to music that overseer uploaded using terminal and spawn images through terminal and place them on the wall.
 of the room. 
 
 The VR user can take a screenshot and send it to the overseer anytime during the experiment.
@@ -102,14 +102,14 @@ This experiment will test
 #### Test Subject (VR)
  you have a gun.
  100's of ballons will be placed all around you.
- You need to shoot as many of them as you can.
- How many did you pop? Did you pop more balloons then the overseer?
+ You need to shoot as many of them as you can. beware since the test subject is popping balloons aswell.
+ How many did you pop? Did you pop more balloons than the overseer?
 
 #### Overseer (Web)
 You have your mouse.
 100's of balloons will be placed on your screen canvas.
-you need to click 5 times on a balloon to pop them. pop as many as you can.
-How many did you pop? Did you pop more balloons then the test subject.
+you need to click 5 times on a balloon to pop them. pop as many as you can. beware since the test subject is popping balloons aswell.
+How many did you pop? Did you pop more balloons than the test subject.
 
 
 ## Technology
