@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - Floor
-  - 
+  - UI
   - 
   - 
   - 
@@ -38,9 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: New Layer
+    uniqueID: 3859204529
     locked: 0
   - name: New Layer
     uniqueID: 2513201977
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
