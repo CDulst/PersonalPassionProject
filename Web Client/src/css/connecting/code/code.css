@@ -1,0 +1,9 @@
+.code__input {
+  width: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: white solid 2px;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}

@@ -1,0 +1,20 @@
+.name__title{
+    color:white;
+    font-family:Nasalization,sans-serif;
+    font-size:1rem;
+    text-align:center;
+}
+.name__input{
+    width:15rem;
+    height:2rem;
+    font-family:Nasalization,sans-serif;
+    text-align:center;
+}
+.name__info{
+    position: relative;
+    font-family:Nasalization,sans-serif;
+    font-size:0.8rem;
+    opacity:0.5;
+    color:white;
+    bottom:-6vh;
+}
