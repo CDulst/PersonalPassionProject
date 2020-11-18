@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UITele__Statemanager : MonoBehaviour
 {
@@ -11,9 +13,13 @@ public class UITele__Statemanager : MonoBehaviour
     public GameObject code;
     private GameObject codeInstance;
     public GameObject teleporter;
+    public GameObject textCode;
 
-    // Start is called before the first frame update
-    void Start()
+    
+
+
+	// Start is called before the first frame update
+	void Start()
     {
         StartCoroutine(PlaceholderScript());
 
@@ -23,7 +29,7 @@ public class UITele__Statemanager : MonoBehaviour
 
     public void SetLoading()
     {
-        GameObject child = Instantiate(loading, loading.transform.position, Quaternion.identity);
+		GameObject child = Instantiate(loading, loading.transform.position, Quaternion.identity);
         child.transform.parent = gameObject.transform;
         child.GetComponent<RectTransform>().localPosition = new Vector3(0, 0, 0);
         loadingInstance = child;
@@ -54,13 +60,17 @@ public class UITele__Statemanager : MonoBehaviour
         child.GetComponent<RectTransform>().localScale = new Vector3(0.81757f, 0.81757f, 0.81757f);
         child.GetComponent<RectTransform>().localRotation = Quaternion.Euler(0, 0, 0);
         connectionInstance = child;
+        StartCoroutine(LowerTeleporter());
     }
 
     // Set the code state
-    public void SetCode()
+    public IEnumerator SetCode(string key)
     {
+        yield return new WaitForSeconds(6);
         StartCoroutine(LoadingDone(loadingInstance));
         GameObject child = Instantiate(code, code.transform.position, Quaternion.identity);
+        textCode = GameObject.FindGameObjectWithTag("Code");
+        textCode.GetComponent<Text>().text = key;
         child.transform.parent = gameObject.transform;
         child.GetComponent<RectTransform>().localPosition = new Vector3(31.5f, 0, 0.232f);
         child.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
@@ -69,17 +79,19 @@ public class UITele__Statemanager : MonoBehaviour
     }
 
 
+    public IEnumerator LowerTeleporter()
+    {
+        yield return new WaitForSeconds(6);
+        teleporter.GetComponent<Anim__Teleporter>().TeleportDown();
+    }
+
+  
+
     //Placeholder script since their is no real connection in place yet.
     IEnumerator PlaceholderScript()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SetLoading();
-        yield return new WaitForSeconds(8);
-        SetCode();
-        yield return new WaitForSeconds(8);
-        SetConnection();
-        yield return new WaitForSeconds(5);
-        teleporter.GetComponent<Anim__Teleporter>().TeleportDown();
     }
 
 }

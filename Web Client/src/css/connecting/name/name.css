@@ -4,16 +4,21 @@
     font-size:1rem;
     text-align:center;
 }
+
 .name__input{
-    width:15rem;
+    transform: scaleX(2rem);
+    background-color: transparent;
+    border:none;
+    border-bottom: white solid 2px;
     height:2rem;
     font-family:Nasalization,sans-serif;
     text-align:center;
+    color: white;
 }
 .name__info{
     position: relative;
     font-family:Nasalization,sans-serif;
-    font-size:0.8rem;
+    font-size:0.6rem;
     opacity:0.5;
     color:white;
     bottom:-6vh;

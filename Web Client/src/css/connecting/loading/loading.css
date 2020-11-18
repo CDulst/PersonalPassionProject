@@ -1,3 +1,13 @@
 .loading__content {
   margin-top: 2rem;
 }
+
+.loading__svg--start {
+  width: 0;
+  height: 0;
+}
+
+.loading__svg {
+  transition: ease-in-out 3s;
+  width: 50px;
+}
