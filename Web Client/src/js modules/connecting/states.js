@@ -2,7 +2,7 @@ const socket = require("../socket/connection");
 const $container = document.querySelector(".connecting__container--start");
 const div = document.createElement("div");
 let checker = false;
-IntroAnimation();
+//IntroAnimation();
 
 export function IntroAnimation(){
   const $icon = document.querySelectorAll(".iconify" );
