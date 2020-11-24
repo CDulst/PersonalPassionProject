@@ -1,10 +1,13 @@
 ﻿<Properties StartupConfiguration="{37174B20-9484-6D1B-C64B-C7F1C510125B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Networking/netw__connection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Browser/BrowserControl.cs">
     <Files>
       <File FileName="Assets/Oculus/VR/Scripts/OVRManager.cs" Line="1871" Column="1" />
       <File FileName="Assets/Scripts/UI/Teleport Terminal/UITele__Statemanager.cs" />
       <File FileName="Assets/SocketIO/Scripts/SocketIO/SocketIOComponent.cs" />
-      <File FileName="Assets/Scripts/Networking/netw__connection.cs" Line="4" Column="15" />
+      <File FileName="Assets/Scripts/Networking/netw__connection.cs" />
+      <File FileName="Assets/Plugin/Android/AndroidManifest.xml" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Browser/BrowserView.cs" Line="22" Column="41" />
+      <File FileName="Assets/Scripts/Browser/BrowserControl.cs" Line="24" Column="87" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +17,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="56ad1120-058d-4598-9880-bc69dcad8f0d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="11a3a68f-ca2b-45d7-a319-e477710e235c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

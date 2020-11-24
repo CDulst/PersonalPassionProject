@@ -1,10 +1,11 @@
 let io = require('socket.io-client');
 import {socketmodule} from "../socket/socketModule";
 import {Name,Connected} from "../connecting/states";
+import {signalPeer} from "../home/streaming/webcam";
 let socket;
-
+let peer;
 export function connection (){
-  socket = io.connect("https://192.168.0.206:52300");
+  socket = io.connect("http://192.168.0.207:52300");
   console.log(socket);
 }
 
@@ -24,9 +25,30 @@ export function checkCode (code,$info,checker){
   })
 }
 
+export function setPeer(p){
+  peer = p;
+}
+
+
 export function nameEntered (name){
   socketmodule.name = name;
   console.log(socketmodule);
   Connected();
   socket.emit("connectionPackage",socketmodule);
 }
+
+export function placeholderConnect (){
+  let data = {
+    id: socket.id,
+    type:"web"
+  }
+  socket.emit("connectionPackage",data);
+}
+
+export function sendSignal (data){
+  socket.emit("signal",data);
+  socket.on("signal", async data => {
+    signalPeer(data,peer);
+  })
+}
+

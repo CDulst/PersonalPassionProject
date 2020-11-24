@@ -1,5 +1,6 @@
 let $content = document.querySelector(".body");
-
+const socket = require("../socket/connection");
+import {activateWebcam} from "./streaming/webcam";
 export function StartAnimation () {
   $content.innerHTML= ""
 
@@ -65,34 +66,3 @@ $content.innerHTML =
 activateWebcam();
 }
 
-const activateWebcam = async() => {
-  const $video = document.querySelector('.webcam__video');
-  const constraints = {
-    audio: false,
-    video: getWindowDimensions()
-  };
-   // Een object creeren die de webcam gebruikt met de opgelegde constraints
-   const stream = await navigator.mediaDevices.getUserMedia(constraints);
-   //De video tag in html gaat de stream van de webcam als videoclip gebruiken
-   $video.srcObject = stream;
-}
-
-const getWindowDimensions = () => {
-  const width = Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-
-  const height = Math.max(
-    document.body.scrollHeight,
-    document.documentElement.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.offsetHeight,
-    document.documentElement.clientHeight
-  );
-
-  return { width, height };
-};

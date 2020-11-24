@@ -18,13 +18,13 @@ const options = {
   key: fs.readFileSync('./localhost.key'),
   cert: fs.readFileSync('./localhost.crt')
 };
-const server = require('https').Server(options, app); // httpS instead of http
+const server = require('http').Server(options, app); // httpS instead of http
 //De port waar naar geluisterd moet worden
 const port = process.env.PORT || 52300;
 const io = require('socket.io')(server);
 let clients = {
   web:[],
-  vr: []
+  vr: [],
 }
 io.on('connection', function(socket){
   console.log(`Connection Made:${socket.id}`);
