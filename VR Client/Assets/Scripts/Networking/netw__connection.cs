@@ -8,6 +8,7 @@ public class netw__connection : MonoBehaviour
 {
 	public SocketIOComponent socket;
     public GameObject UITele;
+    public GameObject Cam;
     private string characters = "0123456789abcdefghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ";
     Dictionary<string, string> connectionData;
     public bool connectionMade;
@@ -23,6 +24,8 @@ public class netw__connection : MonoBehaviour
     public void roomEnter(SocketIOEvent e)
     {
         UITele.GetComponent<UITele__Statemanager>().SetConnection();
+        Debug.Log("test");
+        StartCoroutine(Cam.GetComponent<BrowserControl>().showBrowser());
     }
 
     public string RandomCode()

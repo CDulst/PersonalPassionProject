@@ -7,10 +7,6 @@ const connectClient = (io,socket,clients) => {
           clients.vr.push(data);
           console.log(clients);
       }
-      if (data.type === "cam"){
-          clients.cam.push(data);
-          console.log(clients);
-      }
       else{
           clients.web.push(data);
           console.log(clients);
@@ -20,17 +16,6 @@ const connectClient = (io,socket,clients) => {
       socket.on("CodeCheck", code => {
           console.log(code);
           checkClients(clients,code,socket);
-      })
-
-      socket.on('signal', (signal) => {
-      console.log(signal);
-      io.to(clients.cam[0].id).emit('signal', signal);
-      });
-
-      socket.on('signalBack', signal => {
-        console.log(signal);
-        console.log("check2");
-        io.to(clients.web[0].id).emit('signal', signal);
       })
 }
 

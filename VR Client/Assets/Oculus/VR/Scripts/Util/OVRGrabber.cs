@@ -16,6 +16,7 @@ permissions and limitations under the License.
 
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 /// <summary>
 /// Allows grabbing and throwing of objects with the OVRGrabbable component on them.
@@ -73,7 +74,7 @@ public class OVRGrabber : MonoBehaviour
     protected float m_prevFlex;
 	protected OVRGrabbable m_grabbedObj = null;
     protected Vector3 m_grabbedObjectPosOff;
-    protected Quaternion m_grabbedObjectRotOff;
+    public Quaternion m_grabbedObjectRotOff;
 	protected Dictionary<OVRGrabbable, int> m_grabCandidates = new Dictionary<OVRGrabbable, int>();
 	protected bool m_operatingWithoutOVRCameraRig = true;
 
@@ -297,6 +298,9 @@ public class OVRGrabber : MonoBehaviour
                 if(m_grabbedObj.snapOffset)
                 {
                     m_grabbedObjectRotOff = m_grabbedObj.snapOffset.rotation * m_grabbedObjectRotOff;
+					if (m_controller == OVRInput.Controller.LTouch) {
+						m_grabbedObjectRotOff = Quaternion.Euler(-90, -90, 0);
+					} 
                 }
             }
             else

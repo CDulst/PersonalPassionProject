@@ -14,9 +14,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Experiment Room.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gamescene.unity
     guid: d7bf3a91a75c0604eb9b6bbe9a2acb00
+  - enabled: 0
+    path: Assets/Scenes/Minigame.unity
+    guid: e068b5f4092a348628a29bb27705e7e4
+  - enabled: 1
+    path: Assets/Scenes/Minigame VS.unity
+    guid: b83b457c1bfcf4869be84d7484ea4f6b
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: eea3707252abd425884d8e3a13832a29,
       type: 2}

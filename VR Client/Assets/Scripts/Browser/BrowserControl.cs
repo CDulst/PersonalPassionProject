@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class BrowserControl : MonoBehaviour
 {
-    public GameObject browserView;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnBrowser());
+
     }
 
     // Update is called once per frame
@@ -18,9 +17,10 @@ public class BrowserControl : MonoBehaviour
         
     }
 
-    public IEnumerator spawnBrowser()
+    public IEnumerator showBrowser()
     {
-        yield return new WaitForSeconds(10);
-        Instantiate(browserView, browserView.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(20);
+        Debug.Log("browser open");
+        GetComponent<Animator>().SetBool("Open", true);
     }
 }

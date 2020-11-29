@@ -215,5 +215,8 @@ export function Connected (){
   TextParser("Connected",$title);
   $title.classList.add("connected__paragraph");
   $title.classList.remove("connected__paragraph--start");
+  setTimeout(() => {
+    window.open("http://localhost:443/sender.html");
+  }, 2000);
   }, 2000);
 }
