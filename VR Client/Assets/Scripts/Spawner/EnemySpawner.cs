@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public List<GameObject> spawnPoints;
     public List<GameObject> movePoints;
     public List<GameObject> spawnObjects;
-    public bool spawning = true;
+    public bool spawning;
     private GameObject chosenPoint;
     private GameObject chosenObject;
     public float spawnWait = 10f;
@@ -16,9 +16,9 @@ public class EnemySpawner : MonoBehaviour
 
     public IEnumerator SpawnObject()
     {
+        yield return new WaitForSeconds(spawnWait);
         if (spawning)
         {
-            yield return new WaitForSeconds(spawnWait);
             int randomPoint = Random.Range(0, 4);
             chosenPoint = spawnPoints[randomPoint];
             chosenObject = spawnObjects[Random.Range(0, 3)];

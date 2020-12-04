@@ -1,10 +1,16 @@
 import {Loading,Name,Code,Connected,IntroAnimation} from "./js modules/connecting/states";
-import {Webcam,StartAnimation} from "./js modules/home/states";
+import {NeutralScreen,StartAnimation} from "./js modules/gamescreen/states";
 import {connection} from "./js modules/socket/connection";
+import './index.css';
+export function GameStart(){
+  connection();
+  StartAnimation();
+  setTimeout (NeutralScreen,1000);
+}
+
 {
   const init = () => {
    ConnectingStart();
-   //WebcamStart();
   }
 
   const ConnectingStart = () => {
@@ -14,11 +20,6 @@ import {connection} from "./js modules/socket/connection";
     setTimeout(Code, 6000);
   }
 
-  const WebcamStart = () => {
-    connection();
-    StartAnimation();
-    setTimeout(Webcam,1000);
-  }
 
   init();
 }

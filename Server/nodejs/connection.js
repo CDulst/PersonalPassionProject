@@ -24,7 +24,8 @@ const connectClient = (io,socket,clients) => {
 const confirmConnection = (clients,code,io) => {
     clients.vr.forEach(client => {
         if (client.code === code){
-        io.sockets.to(client.id).emit("overseerConnected");
+        console.log("success");
+        io.sockets.to(client.id).emit("overseerConnected","true");
         }
     });
 }

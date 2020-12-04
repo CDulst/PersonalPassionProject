@@ -11,6 +11,10 @@ public class SimpleShoot : MonoBehaviour
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
 
+
+    [Header("Animation")]
+    public Animator gunAnimator;
+
     [Header("Audio")]
     public AudioSource gunSound;
 
@@ -27,6 +31,7 @@ public class SimpleShoot : MonoBehaviour
     void Start()
     {
         gunSound = GetComponent<AudioSource>();
+        gunAnimator = GetComponent<Animator>();
         if (barrelLocation == null)
             barrelLocation = transform;
 
@@ -41,11 +46,17 @@ public class SimpleShoot : MonoBehaviour
         }
     }
 
+    public void ShootFalse()
+    {
+        gunAnimator.SetBool("Shoot", false);
+    }
+
 
     //This function creates the bullet behavior
     public void Shoot()
     {
         gunSound.Play();
+        gunAnimator.SetBool("Shoot", true);
         if (muzzleFlashPrefab)
         {
             //Create the muzzle flash

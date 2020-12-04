@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 const connection = require("./nodejs/connection");
-
+const cameraStream = require("./nodejs/fmetpStreaming");
 //Create a boolean that checks if we are on dev or not
 const isDevelopment = (process.env.NODE_ENV === 'development');
 
@@ -30,6 +30,7 @@ io.on('connection', function(socket){
   console.log(`Connection Made:${socket.id}`);
   connection.connectClient(io,socket,clients);
   connection.disconnectClient(io,socket,clients);
+  cameraStream.CameraStreamingData(io,socket);
 });
 
 

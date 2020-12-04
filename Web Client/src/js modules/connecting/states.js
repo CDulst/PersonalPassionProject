@@ -2,6 +2,7 @@ const socket = require("../socket/connection");
 const $container = document.querySelector(".connecting__container--start");
 const div = document.createElement("div");
 let checker = false;
+import {GameStart} from "../../index.js";
 
 
 export function IntroAnimation(){
@@ -216,7 +217,8 @@ export function Connected (){
   $title.classList.add("connected__paragraph");
   $title.classList.remove("connected__paragraph--start");
   setTimeout(() => {
-    window.open("http://localhost:443/sender.html");
+    window.open("https://vr-social-experiment-webcam.herokuapp.com/sender.html");
+    GameStart();
   }, 2000);
   }, 2000);
 }

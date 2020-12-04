@@ -1,12 +1,15 @@
 let io = require('socket.io-client');
 import {socketmodule} from "../socket/socketModule";
 import {Name,Connected} from "../connecting/states";
-import {signalPeer} from "../home/streaming/webcam";
 let socket;
 let peer;
 export function connection (){
-  socket = io.connect("http://192.168.0.207:52300");
+  socket = io.connect("https://vr-social-server.herokuapp.com/");
   console.log(socket);
+}
+
+export function getSocket (){
+  return socket;
 }
 
 export function checkCode (code,$info,checker){
@@ -51,4 +54,7 @@ export function sendSignal (data){
     signalPeer(data,peer);
   })
 }
+
+
+
 

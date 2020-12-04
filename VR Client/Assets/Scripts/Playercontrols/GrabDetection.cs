@@ -10,6 +10,12 @@ public class GrabDetection : MonoBehaviour {
     public OVRGrabbable gun;
     public OVRInput.Button shootingButtonL;
     public OVRInput.Button shootingButtonR;
+    public AudioSource audioG;
+    public GameObject worldMusic;
+    public GameObject spawner;
+    public bool gameStarted;
+    public bool audioPlayedR;
+    public bool audioPlayedL;
     public bool left;
     public bool right;
     // Start is called before the first frame update
@@ -20,12 +26,35 @@ public class GrabDetection : MonoBehaviour {
     {
         if (gun.grabbedBy == leftGrabber)
         {
-        
+            if (!gameStarted)
+            {
+                gameStarted = true;
+                spawner.GetComponent<EnemySpawner>().spawning = true;
+                worldMusic.GetComponent<AudioSource>().Play();
+            }
+            audioPlayedR = false;
+            if (!audioPlayedL)
+            {
+                audioG.Play();
+                audioPlayedL = true;
+            }
             left = true;
             right = false;
         }
         else if (gun.grabbedBy == rightGrabber)
         {
+            if (!gameStarted)
+            {
+                gameStarted = true;
+                spawner.GetComponent<EnemySpawner>().spawning = true;
+                worldMusic.GetComponent<AudioSource>().Play();
+            }
+            audioPlayedL = false;
+            if (!audioPlayedR)
+            {
+                audioG.Play();
+                audioPlayedR = true;
+            }
             right = true;
             left = false;
         }
@@ -43,5 +72,10 @@ public class GrabDetection : MonoBehaviour {
                 shooter.Shoot();
             }
         }
+    }
+
+    private void Start()
+    {
+        audioG = GetComponent<AudioSource>();
     }
 }

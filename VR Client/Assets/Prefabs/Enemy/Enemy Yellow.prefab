@@ -136,7 +136,7 @@ MonoBehaviour:
   gameOverSound: {fileID: 0}
   health: 500
   damage: 100
-  movespeed: 6
+  movespeed: 3
   movespot: {fileID: 0}
 --- !u!82 &3223757686548406346
 AudioSource:
@@ -156,7 +156,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 83
+  Priority: 43
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

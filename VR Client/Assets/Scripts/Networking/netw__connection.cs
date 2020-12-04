@@ -1,31 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SocketIO;
+using FMSocketIO;
 
 
 public class netw__connection : MonoBehaviour
 {
 	public SocketIOComponent socket;
+	public bool checkConnection = false;
     public GameObject UITele;
+    public GameObject BrowserVieww;
+	public GameObject go;
     public GameObject Cam;
-    private string characters = "0123456789abcdefghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private string characters = "0123456789abcdefghijklmnopqrstuvwx";
     Dictionary<string, string> connectionData;
     public bool connectionMade;
     // Start is called before the first frame update
     void Start()
 	{
-		GameObject go = GameObject.Find("SocketIO");
-		socket = go.GetComponent<SocketIOComponent>();
-		socket.On("connected", connected);
-        socket.On("overseerConnected", roomEnter);
+		socket.On("overseerConnected", roomEnter);
 	}
 
     public void roomEnter(SocketIOEvent e)
     {
-        UITele.GetComponent<UITele__Statemanager>().SetConnection();
-        Debug.Log("test");
-        StartCoroutine(Cam.GetComponent<BrowserControl>().showBrowser());
+		Debug.Log("test");
+        BrowserVieww.SetActive(true);
+		UITele.GetComponent<UITele__Statemanager>().SetConnection();
     }
 
     public string RandomCode()
@@ -54,9 +54,11 @@ public class netw__connection : MonoBehaviour
     {
         if (!connectionMade)
         {
-            connectionMade = true;
+			Debug.Log("hello");
+			connectionMade = true;
             CreateConnectionObj();
-            socket.Emit("connectionPackage", new JSONObject(connectionData));
+			var Jn = new JSONObject(connectionData);
+			socket.Emit("connectionPackage", Jn.ToString());
             StartCoroutine(UITele.GetComponent<UITele__Statemanager>().SetCode(connectionData["code"]));
         }
     }
@@ -64,6 +66,15 @@ public class netw__connection : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
+        if (!checkConnection)
+		{
+			socket = go.GetComponent<SocketIOComponent>();
+			if (socket)
+			{
+				checkConnection = true;
+				socket.On("connected", connected);
+				socket.On("overseerConnected", roomEnter);
+			}
+		}
 	}
 }
